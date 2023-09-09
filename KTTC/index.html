@@ -38,15 +38,15 @@
             margin-left: auto;
             margin-right: 15px;
         }
-
-        .form form input{
+        #input_form{
             border: 1px solid #cccc;
             line-height: 38px;
             padding: 0 15px;
             width: 100%;
             outline: none;
-            border-right: 0;
+            border-right: 0;  
         }
+        
 
         select{
             border: 1px solid #cbcbcb;
@@ -72,11 +72,11 @@
         }
 
         
-
-        .button img {
+        #img_serch{
             width: 100%;
             padding: 10px;
         }
+
 
         .servers{
             width: 25px;
@@ -89,24 +89,18 @@
         ul{
             list-style: none;
         }
-
-        .nav-link a {
+        #link_RU{
             text-decoration: none;
             color: gray;
             font-size: 18px;
-            transition: 0.2 color;
+            transition: 0.2 color; 
         }
-
-        .nav-link a:hover{
-            color: black;
-            text-decoration: underline;
-        }
-
-        .login{
+        
+        #login{
             margin-right: 15px;
         }
 
-        .login a {
+        #login_a {
             text-decoration: none;
             color: black;
             border: 1px solid #cbcbcb;
@@ -116,7 +110,7 @@
             align-items: center;
         }
 
-        .grid-item-left-menu{
+        .grid_item_left_menu{
             width: 250px;
             min-width: 250px;
             padding: 25px;
@@ -132,7 +126,7 @@
             font-weight: 500;
         }
 
-        .grid-li{
+        .grid_li{
             margin-bottom: 15px;
         }
 
@@ -145,11 +139,7 @@
             color: #6d6d6d;
         }
 
-        .grid__inner_link:hover{
-            color: #1a1a1a;
-        }
-
-        .grid-li > ul > li {
+        .grid_li  ul  li {
             margin-top: 15px;
             margin-bottom: 15px;
         }
@@ -209,7 +199,7 @@
 
         }
 
-        .grid-item-left-menu + .content{
+        .grid_item_left_menu + .content{
             min-width: calc(100% - 250px);
             width: calc(100% - 250px);
         }
@@ -394,7 +384,7 @@
             width: 30px; border-radius: 20px; margin-right: 10px;
         }
 
-        .purple-color{
+        #purple-color{
             background-color: #c64cff;
         }
         .score_collor_1{
@@ -415,38 +405,38 @@
             </div>
             <div class="form">
                 <form action style="display: flex">
-                    <input type="text" placeholder="Введите ник или клан">
+                    <input type="text" id="input_form" placeholder="Введите ник или клан">
                     <select name id>
                         <option value="Ник">Ник</option>
     
                     </select>
                     <a href="#" class="button">
-                        <img src="images/search_log.svg" alt>
+                        <img id="img_serch" src="images/search_log.svg" alt>
                     </a>
                 </form>
             </div>
             <div class="servers">
                 <ul>
-                    <li class="nav-link"><a href="#">Ru</a></li>
+                    <li class="nav-link"><a id="link_RU" href="#">Ru</a></li>
                 </ul>
             </div>
-            <div class="login">
-                <a href="#" class="btn">Войти с Lesta ID</a>
+            <div id="login">
+                <a id="login_a" href="#" class="btn">Войти с Lesta ID</a>
             </div>
         </header>
 
         <main class="grid">
                 <div class="grid__body">
-                    <div class="grid-item-left-menu">
+                    <div class="grid_item_left_menu">
                         <ul class="grid__nav">
-                            <li class="grid-li"><a class="grid__link" href="https://kttc.ru/wot/ru/vip/"><span
+                            <li class="grid_li"><a class="grid__link" href="https://kttc.ru/wot/ru/vip/"><span
                                         class="red">VIP аккаунт</span></a></li>
-                            <li class="grid-li"><a class="grid__link" href="https://kttc.ru/wot/ru/info/gunmarks/">Отметки
+                            <li class="grid_li"><a class="grid__link" href="https://kttc.ru/wot/ru/info/gunmarks/">Отметки
                                     на стволах</a></li>
-                            <li class="grid-li"><a class="grid__link" href="https://kttc.ru/wot/ru/info/mastery/">Знаки
+                            <li class="grid_li"><a class="grid__link" href="https://kttc.ru/wot/ru/info/mastery/">Знаки
                                     классности</a></li>
-                            <li class="grid-li"><a class="grid__link" href="https://kttc.ru/wot/ru/clans/">Кланы</a></li>
-                            <li class="grid-li">
+                            <li class="grid_li"><a class="grid__link" href="https://kttc.ru/wot/ru/clans/">Кланы</a></li>
+                            <li class="grid_li">
                                 <a class="grid__link" href="https://kttc.ru/wot/ru/top/">Топ</a>
                                 <ul class="grid__inner__ul">
                                     <li><a class="grid__inner_link" href="https://kttc.ru/wot/ru/top/tanks/">Топ
@@ -475,7 +465,6 @@
                                     class="grid__second-link" href="https://kttc.ru/wot/ru/info/colorscale/">Цветовая
                                     шкала</a></li>
                         </ul>
-
                         <ul class="grid__third-ul">
                             <li class="grid__third__nav-item"><a
                                     class="grid__third-link-first" href="https://t.me/kttc_ru">Наш
@@ -945,7 +934,7 @@
                                 <li class="content_item">
                                     <span class="wrap">
                                         <span class="left">
-                                            <img class="purple-color" src="images/emblem_R_BoY.png" alt="">
+                                            <img id="purple-color" src="images/emblem_R_BoY.png" alt="">
                                             <a href="https://kttc.ru/wot/ru/clan/446196/"><span style="color: #c64cff;">[</span>R-BOY<span style="color: #c64cff;">]</span></a>
                                         </span>
                                         <span class="right">
