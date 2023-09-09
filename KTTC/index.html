@@ -110,7 +110,7 @@
             align-items: center;
         }
 
-        .grid_item{
+        .grid-item-left-menu{
             width: 250px;
             min-width: 250px;
             padding: 25px;
@@ -126,7 +126,7 @@
             font-weight: 500;
         }
 
-        .grid_li{
+        .grid-li{
             margin-bottom: 15px;
         }
 
@@ -139,7 +139,9 @@
             color: #6d6d6d;
         }
 
-        .grid_li  ul  li {
+       
+
+        .grid-li  ul  li {
             margin-top: 15px;
             margin-bottom: 15px;
         }
@@ -199,14 +201,11 @@
 
         }
 
-        .grid_item  {
-            min-width: calc(100% - 250px);
-            width: calc(100% - 250px); 
-        }
-        .content{
+        .grid-item-left-menu + .content{
             min-width: calc(100% - 250px);
             width: calc(100% - 250px);
         }
+
         .content{
             display: flex;
             flex-direction: row;
@@ -430,16 +429,16 @@
 
         <main class="grid">
                 <div class="grid__body">
-                    <div class="grid_item">
+                    <div class="grid-item-left-menu">
                         <ul class="grid__nav">
-                            <li class="grid_li"><a class="grid__link" href="https://kttc.ru/wot/ru/vip/"><span
+                            <li class="grid-li"><a class="grid__link" href="https://kttc.ru/wot/ru/vip/"><span
                                         class="red">VIP аккаунт</span></a></li>
-                            <li class="grid_li"><a class="grid__link" href="https://kttc.ru/wot/ru/info/gunmarks/">Отметки
+                            <li class="grid-li"><a class="grid__link" href="https://kttc.ru/wot/ru/info/gunmarks/">Отметки
                                     на стволах</a></li>
-                            <li class="grid_li"><a class="grid__link" href="https://kttc.ru/wot/ru/info/mastery/">Знаки
+                            <li class="grid-li"><a class="grid__link" href="https://kttc.ru/wot/ru/info/mastery/">Знаки
                                     классности</a></li>
-                            <li class="grid_li"><a class="grid__link" href="https://kttc.ru/wot/ru/clans/">Кланы</a></li>
-                            <li class="grid_li">
+                            <li class="grid-li"><a class="grid__link" href="https://kttc.ru/wot/ru/clans/">Кланы</a></li>
+                            <li class="grid-li">
                                 <a class="grid__link" href="https://kttc.ru/wot/ru/top/">Топ</a>
                                 <ul class="grid__inner__ul">
                                     <li><a class="grid__inner_link" href="https://kttc.ru/wot/ru/top/tanks/">Топ
