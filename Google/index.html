@@ -250,10 +250,10 @@
         <div class="main_table">
         <img  class="logo" src="images/logo.svg" width="272" height="92" alt="Google">
         <search class="main__search">
-            <form action="">
+            <form action="https://www.google.ru/search" method="get">
                 <div class="search">
                     <img class="search__icon" src="images/s.png" width="20" height="20" aria-hidden="true">
-                    <input class="search__input" type="search" aria-label="Search">
+                    <input class="search__input" name="q" type="search" aria-label="Search">
                     <button class="search__button" type="button" aria-label="KeyBoard">
                         <img class="search__feature" src="images/kk.png" width="40" height="40">
                     </button>
@@ -265,7 +265,7 @@
                     </button>
                 </div>
                 <div class="main__buttons">
-                    <button class="button button--plain" type="button">Поиск в Google</button>
+                    <button class="button button--plain" type="submit">Поиск в Google</button>
                     <button class="button button--plain" type="button">Мне повезет!</button>
                 </div>
             </form>
