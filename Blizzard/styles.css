@@ -19,14 +19,20 @@ body {
 }
 .container {
     display: grid;
-    grid-template-rows: 250px 70px 70px 390px 300px; /* Создаем три строки: верхний, средний и нижний контейнер */
-    justify-items: center; /* Выравниваем элементы по центру по горизонтали */
-    align-items: center; /* Выравниваем элементы по центру по вертикали */
-    height: 100vh; /* Занимаем 100% высоты окна браузера */
+    grid-template-rows: 250px 70px 70px 450px 120px; 
+    justify-items: center; 
+    align-items: center; 
+    height: 100vh; 
 }
 
 .center {
     text-align: center;
+}
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    font-size: 17px; 
+    color: rgb(107,108,112);
+    border-color: rgb(107,108,112);
 }
 
 .center img {
@@ -36,14 +42,14 @@ body {
 
 .icons {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Три колонки */
-    grid-gap: 20px; /* Отступы между иконками */
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 20px; 
     text-align: center;
 }
 .icons4 {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Три колонки */
-    grid-gap: 20px; /* Отступы между иконками */
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 20px; 
     text-align: center;
 }
 .icons img {
@@ -53,10 +59,13 @@ body {
 .icons4 img{
     max-width: 100%;
     height: auto;
+    margin-bottom: 50px;
+    margin-top: 40px;
 }
 .login-form {
     text-align: center;
     margin-bottom: 30px;
+
 }
 
 .login-form p {
@@ -64,7 +73,7 @@ body {
 }
 
 .login-form input {
-    width: 75%;
+    width: 60%;
     padding: 12px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
@@ -73,7 +82,7 @@ body {
 }
 
 .login-form button {
-    width: 80%;
+    width: 65%;
     padding: 12px;
     background-color: #007bff;
     color: #fff;
@@ -87,14 +96,14 @@ body {
     background-color: #0056b3;
 }
 .login-form .second-line {
-    margin-top: 50px; /* Добавляем отступ между второй и третьей строками */
+    margin-top: 50px; 
     margin-bottom: 0;
 }
 .login-form .third-line{
     margin-top: 0;
 }
 .login-form .fourth-line {
-    margin-top: 30px; /* Добавляем отступ между второй и третьей строками */
+    margin-top: 30px; 
 }
 .footer{
     text-align: center;
@@ -115,4 +124,17 @@ body {
 }
 .last_text{
     color: #ffffff4d;
+}
+#button{
+    margin-top: 25px;
+    font-size: 17px; 
+}
+.link{
+    font-size: 16px;
+    text-decoration:none;
+    font-weight: bold;
+}
+#or{
+    font-weight: bold;
+    font-size:14px ;
 }
