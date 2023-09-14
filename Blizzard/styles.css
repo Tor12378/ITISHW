@@ -52,6 +52,10 @@ body {
     grid-gap: 20px; 
     text-align: center;
 }
+#o{
+    width: 60%;
+    margin-bottom: 30px;margin-top: 35px;
+}
 .icons img {
     max-width: 100%;
     height: auto;
@@ -71,10 +75,17 @@ body {
 .login-form p {
     margin-bottom: 10px;
 }
-
+.first_links a {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.second_links a {
+    margin-right: 10px; 
+    margin-left: 10px;
+}
 .login-form input {
-    width: 60%;
-    padding: 12px;
+    width: 370px;
+    padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -82,7 +93,7 @@ body {
 }
 
 .login-form button {
-    width: 65%;
+    width: 390px;
     padding: 12px;
     background-color: #007bff;
     color: #fff;
@@ -137,4 +148,41 @@ body {
 #or{
     font-weight: bold;
     font-size:14px ;
+}
+
+
+.password-input {
+    position: relative;
+}
+
+.password-input input[type="password"] {
+    padding-left: 10px; 
+}
+
+.password-icon {
+    position: absolute;
+    top: 30%;
+    left: 350px; 
+    transform: translateY(-50%);
+    background-image: url("images/icon_pas.png");
+    background-size: 35px; 
+    width: 35px; 
+    height: 24px; 
+    background-repeat: no-repeat;
+}
+
+#or:before,
+#or:after {
+    content: "";
+    display: inline-block;
+    width: 30%;
+    border-top: 1px solid #ffffff4d; 
+    
+    vertical-align: middle;
+}
+#or::before{
+    margin-right: 15px;
+}
+#or::after{
+    margin-left: 15px;
 }
